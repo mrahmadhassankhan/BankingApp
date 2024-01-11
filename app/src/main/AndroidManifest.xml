@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BankingApp">
+
+        <activity
+            android:name="com.example.ahmad_banking.CurrencyConvert"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.Withdraw"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.Deposit"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.Savings"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.MoneySendConfirmation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.MoneySend"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.SelectedBankActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.BankTransferList"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.ahmad_banking.SendBankConfirmation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.SendBank"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.SetNewPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.fpMakeSelection"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.ForgetPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ahmad_banking.Login"
+            android:exported="true" />
+        <activity
+            android:name="com.example.ahmad_banking.Dashboard"
+            android:exported="true" /> <!-- Splash -->
+        <activity
+            android:name="com.example.ahmad_banking.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Home -->
+        <activity
+            android:name="com.example.ahmad_banking.Home"
+            android:exported="false" /> <!-- Register -->
+        <activity
+            android:name="com.example.ahmad_banking.Register"
+            android:exported="false" /> <!-- Login -->
+        <!-- MainActivity -->
+        <activity
+            android:name="com.example.ahmad_banking.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" /> <!-- Used Font -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

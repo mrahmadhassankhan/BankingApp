@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_16sdp" />
+    <dimen name="_22ssp"/>
+<!--    <dimen name="h2">@dimen/_20ssp</dimen>
+    <dimen name="h3">@dimen/_18ssp</dimen>
+    <dimen name="h4">@dimen/_16ssp</dimen>-->
+    <dimen name="_14ssp"/> <!--normal-->
+<!--    <dimen name="small">@dimen/_12ssp</dimen>
+    <dimen name="extra_small">@dimen/_10ssp</dimen>-->
+    <dimen name="_8sdp"/> <!--default-->
+    <dimen name="_32sdp" />
+</resources>

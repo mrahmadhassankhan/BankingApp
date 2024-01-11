@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MoneySendConfirmation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Back Button-->
+        <ImageView
+            android:id="@+id/MoneyMoneySendConfirmBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_back"
+            android:transitionName="transition_back_btn" />
+
+        <!--Send Money Text-->
+        <TextView
+            android:id="@+id/SendMoney_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/confirm"
+            android:textColor="@color/green"
+            android:textSize="40sp"
+            android:transitionName="transition_title_text" />
+
+        <!--User Number-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <!--User Image-->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/recipientUserID"
+                android:src="@drawable/ic_baseline_account_circle_24" />
+
+            <!--Recipient ID-->
+            <TextView
+                android:id="@+id/recipientUserID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="108dp"
+                android:fontFamily="@font/poppins"
+                android:foregroundGravity="center|fill_vertical"
+                android:gravity="center"
+                android:text="@string/recipientuserID"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!--Amount-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <!--Amount Sent-->
+            <TextView
+                android:id="@+id/moneySend_confirm_amountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="PKR 200.00"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!--Transfer fee-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:text="@string/transferFee"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <!--Message-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="start"
+                android:fontFamily="@font/poppins"
+                android:text="@string/sendMoneyMessage"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <!--Message here-->
+            <TextView
+                android:id="@+id/moneySend_confirm_messageTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Sample Text Here"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <!--Info message-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins"
+                android:text="@string/sendMoneyInfo"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <!--Continue Button-->
+        <Button
+            android:id="@+id/MoneySendBtnConti"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="callConfirmNextScreen"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:transitionName="transition_next_btn"
+            app:cornerRadius="10dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

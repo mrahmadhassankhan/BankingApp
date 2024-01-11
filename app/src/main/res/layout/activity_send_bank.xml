@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SendBank">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Back Button-->
+        <ImageView
+            android:id="@+id/sendMoneyBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_back"
+            android:transitionName="transition_back_btn" />
+
+        <!--Send Money Text-->
+        <TextView
+            android:id="@+id/SendMoney_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/bankTransfer"
+            android:textColor="@color/green"
+            android:textSize="40sp"
+            android:transitionName="transition_title_text" />
+
+        <!--Inputs-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <!--Account Number-->
+
+            <EditText
+                android:id="@+id/sendMoney_accNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/accNumber"
+                android:fontFamily="@font/poppins"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:ems="10" />
+            <!--<com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sendMoney_accNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/accNumber"
+                app:boxStrokeColor="@color/green"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/green">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="number"
+                    android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--Amount-->
+            <EditText
+                android:id="@+id/sendMoney_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/amount"
+                android:fontFamily="@font/poppins"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:ems="10" />
+            <!--         <com.google.android.material.textfield.TextInputLayout
+                         android:id="@+id/sendMoney_amount"
+                         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="5dp"
+                         android:hint="@string/amount"
+                         app:boxStrokeColor="@color/green"
+                         app:boxStrokeWidthFocused="2dp"
+                         app:endIconMode="clear_text"
+                         app:endIconTint="@color/gray"
+                         app:hintTextColor="@color/green">
+
+
+                         <com.google.android.material.textfield.TextInputEditText
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:fontFamily="@font/poppins"
+                             android:inputType="numberDecimal"
+                             android:textColor="@color/black">
+
+                         </com.google.android.material.textfield.TextInputEditText>
+
+
+                     </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--Message-->
+            <EditText
+                android:id="@+id/sendMoney_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/message"
+                android:fontFamily="@font/poppins"
+                android:inputType="textImeMultiLine"
+                android:textColor="@color/black"
+                android:ems="10" />
+            <!--            <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/sendMoney_message"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:hint="@string/message"
+                            app:boxStrokeColor="@color/green"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:hintTextColor="@color/green">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/poppins"
+                                android:inputType="textMultiLine"
+                                android:textColor="@color/black">
+
+                            </com.google.android.material.textfield.TextInputEditText>
+
+
+                        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        </LinearLayout>
+
+
+        <!--Continue Button-->
+        <Button
+            android:id="@+id/sendMoneyBtnConti"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="callSendMoneyConfirmScreen"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="bottom"
+            android:transitionName="transition_next_btn"
+            app:cornerRadius="10dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

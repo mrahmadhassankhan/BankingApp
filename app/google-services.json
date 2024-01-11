@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "607323116576",
+    "project_id": "banking-app-31f68",
+    "storage_bucket": "banking-app-31f68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607323116576:android:4679a827fc5164698a1845",
+        "android_client_info": {
+          "package_name": "com.example.ahmad_banking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607323116576-5ompnkvq4b3cj35h0hk9el6davosm59h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS5tCjmtWfhhGV4dIVNogppx2dWD7mus0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607323116576-5ompnkvq4b3cj35h0hk9el6davosm59h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607323116576:android:91de628344c227f58a1845",
+        "android_client_info": {
+          "package_name": "com.example.luminousbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607323116576-5ompnkvq4b3cj35h0hk9el6davosm59h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS5tCjmtWfhhGV4dIVNogppx2dWD7mus0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607323116576-5ompnkvq4b3cj35h0hk9el6davosm59h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

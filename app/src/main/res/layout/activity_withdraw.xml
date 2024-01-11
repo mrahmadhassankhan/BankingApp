@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Withdraw">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Back Button-->
+            <ImageView
+                android:id="@+id/withdrawBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_back"
+                android:transitionName="transition_back_btn"
+                android:onClick="callWithdrawBackBtn"/>
+
+            <!--Send Money Text-->
+            <TextView
+                android:id="@+id/Money_Send_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="WITHDRAW"
+                android:textColor="@color/green"
+                android:textSize="40sp"
+                android:transitionName="transition_title_text" />
+            <LinearLayout
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingTop="8dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="8dp"
+                    android:text="ENTER AMOUNT"
+                    android:textSize="18sp"
+                    android:textColor="#000000"/>
+
+                <!--AMOUNT-->
+                <EditText
+                    android:id="@+id/withdraw_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="80dp"
+                    android:hint="@string/amount"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:ems="10" />
+                <!--     <EditText
+                         android:id="@+id/tbAmmount"
+                         android:layout_width="300dp"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="50dp"
+                         android:padding="8dp"
+                         android:background="#FFFFFF"
+                         android:gravity="center_horizontal|center_vertical"
+                         android:textSize="50sp"
+                         android:textColor="#000000"
+                         android:hint="00,000.00"
+                         android:textColorHint="#607D8B"
+                         android:inputType="numberDecimal"/>-->
+                <Button
+                    android:id="@+id/btnWithdrawConfirm"
+                    android:layout_width="290dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Withdraw"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:cornerRadius="10dp"
+                    android:onClick="callWithdrawDashboard">
+
+                </Button>
+                <!--android:id="@+id/btnAccept"-->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

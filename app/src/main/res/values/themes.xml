@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BankingApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#137335</item>
+        <item name="colorPrimaryVariant">#245734</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#8bc032</item>
+        <item name="colorSecondaryVariant">#78bc27</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >#121212</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.BankingApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.BankingApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.BankingApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Toolbar">
+        <item name="android:editTextColor">@color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">BankingApp</string>
+    <string name="Logo">logo</string>
+    <string name="logo">logo</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="enteremail">Enter email address</string>
+    <string name="create">CREATE AN\nACCOUNT</string>
+    <string name="acc">ACCOUNT</string>
+    <string name="enterfn">Enter first name</string>
+    <string name="enterln">Enter last name</string>
+    <string name="enter_user_id">Enter User ID</string>
+    <string name="forget_password_detail">Provide your user name\nfor which you want to reset your password</string>
+    <string name="make_selection_detail">Select which contact detail should we use\nto reset your password?</string>
+    <string name="new_credentials_detail">Your identity has been verified\nSet your new password</string>
+    <string name="password_updated">Password\nUpdated</string>
+    <string name="password_updated_success_message">Your password has been updated!</string>
+    <string name="otp_description_text">Enter One Time Password Sent On\n</string>
+
+    <string name="information_collection_and_use">Information .Collection and Use</string>
+    <string name="cookies">Cookies</string>
+    <string name="agree_and_continue">Agree and Continue</string>
+    <string name="google_play_services">Google Play Services</string>
+    <string name="security">Security</string>
+
+    <!--Send Money & Bank Transfer Strings-->
+    <string name="sendMoney">Send Money</string>
+    <string name="bankTransfer">Bank Transfer</string>
+    <string name="accNumber">Account Number</string>
+    <string name="userIDRecipient">User ID (Recipient)</string>
+    <string name="amount">Amount</string>
+    <string name="message">Message (optional)</string>
+
+
+    <!--Send Money Confirmation Strings-->
+    <string name="confirm">Confirmation</string>
+    <string name="recipientuserID">ahmad</string>
+    <string name="sendMoneyAmount">PKR 200.00</string>
+    <string name="transferFee">Transfer Fee PKR 0.00</string>
+    <string name="accountType">Send Money</string>
+    <string name="sendMoneyMessage">Message:</string>
+    <string name="sendMoneyInfo">Please ensure all information is correct.\nClicking \"SEND\" button means that you have validated all information and confirms it \nto be correct.</string>
+    <string name="title_activity_bank_transfer">BankTransfer</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="balance_format">PKR %d.00</string>
+    <string name="username_format">Hi %s!</string>
+
+
+    <!--Currency Converter-->
+    <string-array name="currencies">
+        <item>KWD - Kuwaiti Dinar</item>
+        <item>BHD - Baharaini Dinar</item>
+        <item>OMR - Omani Riyal</item>
+        <item>JOD - Jordanian Dinar</item>
+        <item>GBP - Pound Sterling</item>
+        <item>EUR - Euro</item>
+        <item>USD - US Dollar</item>
+        <item>TRY - Turkish Lira</item>
+        <item>QAR - Qatari Rial</item>
+        <item>CAD - Canadian Dollar</item>
+        <item>AUD - Australian Dollar</item>
+        <item>SGD - Singapore Dollar</item>
+        <item>SAR - Saudi Riyal</item>
+        <item>NPR - Nepalese Rupee</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Profile Menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/deleteAccount"
+                    android:title="Delete Account"/>
+                <item
+                    android:id="@+id/logout"
+                    android:title="Logout"/>
+            </group>
+        </menu>
+
+    </item>
+
+</menu>
